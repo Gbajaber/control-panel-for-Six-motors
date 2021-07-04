@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my website</title>
+ <link rel="stylesheet" href="style.css">   
+
+    <style>
+      slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #b34391;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #b588fd;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #d42ff5;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1><font color ="FF00CC"<p> Controlling Robot's Motors</p></font></h1> 
+
+<h3><font color="6699FF"<p><u>Motor1<u/></p></font></h3>
+<div class="slidecontainer">
+  <input type="range" min="0" max="180" value="0" class="slider" id="myRange"name="m1">
+  <p>Value: <span id="demo"></span></p>
+</div>
+
+<script>
+var slider= document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+<h3><font color="6699FF"<p><u>Motor2<u/></p></font></h3>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="180" value="0" class="slider" id="myRange2" name="m2">
+    <p>Value: <span id="demo2"></span></p>
+  </div>
+  
+  <script>
+  var slider2 = document.getElementById("myRange2");
+  var output2 = document.getElementById("demo2");
+  output.innerHTML = slider.value;
+  
+  slider2.oninput = function() {
+    output2.innerHTML = this.value;
+  }
+  </script>
+
+<h3><font color="6699FF"<p><u>Motor3<u/></p></font></h3>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="180" value="0" class="slider" id="myRange3"name="m3">
+    <p>Value: <span id="demo3"></span></p>
+  </div>
+  
+  <script>
+  var slider3 = document.getElementById("myRange3");
+  var output3 = document.getElementById("demo3");
+  output.innerHTML = slider.value;
+  
+  slider3.oninput = function() {
+    output3.innerHTML = this.value;
+  }
+  </script>
+
+<h3><font color="6699FF"<p><u>Motor4<u/></p></font></h3>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="180" value="0" class="slider" id="myRange4"name="m4">
+    <p>Value: <span id="demo4"></span></p>
+  </div>
+  
+  <script>
+  var slider4 = document.getElementById("myRange4");
+  var output4 = document.getElementById("demo4");
+  output.innerHTML = slider.value;
+  
+  slider4.oninput = function() {
+    output4.innerHTML = this.value;
+  }
+  </script>
+
+<h3><font color="6699FF"<p><u>Motor5<u/></p></font></h3>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="180" value="0" class="slider" id="myRange5"name="m5">
+    <p>Value: <span id="demo5"></span></p>
+  </div>
+  
+  <script>
+  var slider5 = document.getElementById("myRange5");
+  var output5 = document.getElementById("demo5");
+  output.innerHTML = slider.value;
+  
+  slider5.oninput = function() {
+    output5.innerHTML = this.value;
+  }
+  </script>
+
+
+
+<h3><font color="6699FF"<p><u>Motor6<u/></p></font></h3>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="180" value="0" class="slider" id="myRange6"name="m6">
+    <p>Value: <span id="demo6"></span></p>
+  </div>
+  
+  <script>
+  var slider6 = document.getElementById("myRange6");
+  var output6 = document.getElementById("demo6");
+  output.innerHTML = slider.value;
+  
+  slider6.oninput = function() {
+    output6.innerHTML = this.value;
+  }
+  </script>
+
+<input type="submit" value="ON" style="font-size:45px; background-color:lightyellow">
+<input type="submit" value="Save" style="font-size:45px; background-color:rgb(225, 182, 241)">
+<input type="submit" value="OFF" style="font-size:45px; background-color:rgb(247, 219, 159)">
+ </form>
+
+
+   
+</body>
+
+<script src="main.js"></script>
+
+</html>
